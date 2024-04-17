@@ -45,33 +45,82 @@
        - 
 -->
 
-```html
+### Course Outline
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>  
-    </head>
-<body>
-    <!-- {{ variable_name }} -->
-    {% if books %}
-         {% for book in books %}                                                   
-             <h1>{{book.title}} by {{book.author}}.</h1>
-             <p>Published: {{book.publication_date}}. Page Count: {{book.page_count}}.</p>
-         {% empty %}
-            <p>No books found.</p>
-         {% endfor %}
-    {% else %}
-        <p>There was an error retrieving the books.</p>
-    {% endif %}                   
-</body>
-</html>
-```
+## Module 1: Introduction to Django
+- Overview of Django framework
+- History and evolution of Django
+- Setting up Django environment
+- Creating a sample project
 
-    URL Patterns -> Defines how URLs map to functions in your application.
+## Module 2: Django Models
+- Introduction to Django Models
+- Defining models
+- Django ORM (Object-Relational Mapping)
+- Working with database migrations
 
-    To make our view accessible through the web we need to define it in urlpatterns list inside urls.py file located at /books    
-    To make our view available through the web we need to link it to a url pattern.
-    In order to do this we have to define a new urlpattern inside the "urlpatterns" list in the main urls.py file
+## Module 3: Django Views
+- Understanding Django views
+- Class-based views vs Function-based views
+- URL routing and view functions
+- Request and response handling
+
+## Module 4: Django Templates
+- Introduction to Django templates
+- Template language basics
+- Template inheritance and inclusion
+- Building dynamic templates
+
+## Module 5: Django Forms
+- Handling forms in Django
+- Using Django forms for user input
+- Form validation and error handling
+- Customizing form behavior
+
+## Module 6: Django Admin
+- Exploring Django Admin interface
+- Customizing Django Admin
+- Registering models with Django Admin
+- Adding actions and filters to Django Admin
+
+## Module 7: Django Security
+- Common security threats in web applications
+- Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF)
+- Authentication and authorization in Django
+- Securing Django applications
+
+## Module 8: Django REST Framework
+- Introduction to Django REST Framework (DRF)
+- Building RESTful APIs with DRF
+- Serializers and views in DRF
+- Authentication and permissions in DRF
+
+## Module 9: Testing in Django
+- Writing unit tests for Django applications
+- Test-driven development (TDD) approach
+- Testing Django views, models, and forms
+- Using Django testing utilities
+
+## Module 10: Deployment and Scaling
+- Preparing Django application for deployment
+- Deploying Django application on popular hosting platforms
+- Scaling Django applications
+- Best practices for Django deployment
+
+## Module 11: Advanced Django Topics (Optional)
+- Caching in Django
+- Asynchronous tasks with Celery
+- Integrating Django with frontend frameworks
+- Building real-time applications with Django Channels
+
+## Module 12: Project Work
+- Working on a real-world Django project
+- Applying concepts learned throughout the course
+- Collaboration and code reviews
+- Presentation of the project
+
+## Conclusion
+- Recap of key concepts learned
+- Next steps in Django development
+- Resources for further learning
 
