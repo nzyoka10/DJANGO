@@ -44,3 +44,34 @@
     Django Templates
        - 
 -->
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>  
+    </head>
+<body>
+    <!-- {{ variable_name }} -->
+    {% if books %}
+         {% for book in books %}                                                   
+             <h1>{{book.title}} by {{book.author}}.</h1>
+             <p>Published: {{book.publication_date}}. Page Count: {{book.page_count}}.</p>
+         {% empty %}
+            <p>No books found.</p>
+         {% endfor %}
+    {% else %}
+        <p>There was an error retrieving the books.</p>
+    {% endif %}                   
+</body>
+</html>
+```
+
+    URL Patterns -> Defines how URLs map to functions in your application.
+
+    To make our view accessible through the web we need to define it in urlpatterns list inside urls.py file located at /books    
+    To make our view available through the web we need to link it to a url pattern.
+    In order to do this we have to define a new urlpattern inside the "urlpatterns" list in the main urls.py file
+
